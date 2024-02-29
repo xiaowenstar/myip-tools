@@ -1,0 +1,23 @@
+{
+  "name": "myip-tools",
+  "version": "1.0.1",
+  "author": "xiaowenstar",
+  "homepage": "",
+  "repository": {
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "main": "lib/myip-tools",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "mocha": "^10.0.0"
+  },
+  "scripts": {
+    "lint": "eslint lib/*.js test/*.js",
+    "test": "npm run lint && mocha --reporter spec test/*-test.js",
+    "fix": "npm run lint -- --fix"
+  },
+  "license": "MIT"
+}
